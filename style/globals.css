@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .hf-h2 {
+    @apply font-poppins font-semibold;
+    font-size: clamp(30px, 3vw, 48px);
+  }
+
+  .hf-h5,
+  .hf-section-subtitle {
+    @apply font-medium;
+    font-size: clamp(20, 5vw, 24px);
+  }
+
+  .hf-h6 {
+    @apply text-xl font-semibold;
+  }
+
+  .hf-paragraph-medium {
+    @apply text-base font-medium leading-6;
+  }
+
+  .hf-tab-btn {
+    @apply flex w-fit items-center gap-4 rounded-tr-[32px] bg-HF-gray px-8 py-4 pl-5 text-base font-medium leading-6;
+  }
+
+  .hf-tab-active {
+    @apply bg-HF-yellow;
+  }
+
+  .hf-section-title {
+    @apply font-poppins font-semibold;
+    font-size: clamp(32px, 2vw, 40px);
+  }
+}
+
+@layer components {
+  .hf-primary-button {
+    @apply relative isolate overflow-clip rounded-full border-2 border-black bg-HF-orange px-7 py-5 text-xl font-semibold text-black duration-200 hover:bg-HF-orange/90;
+  }
+
+  .hf-primary-button:hover::before {
+    transform: translateY(0);
+  }
+
+  .hf-primary-button::before {
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    background: #ffd540;
+    border-radius: 50% 50% 0 0;
+    left: 0;
+    top: -20px;
+    transform: translateY(100px);
+    transition-duration: 400ms;
+    z-index: 1;
+  }
+
+  .hf-primary-button > span {
+    z-index: 2;
+    position: relative;
+  }
+}

@@ -7,6 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px'
+      }
+    },
+
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -17,7 +25,12 @@ const config: Config = {
       colors: {
         'HF-yellow': '#FFD540',
         'HF-blue': '#3C479D',
-        'HF-orange': '#F15A29'
+        'HF-orange': '#F15A29',
+        'HF-gray': '#EBECF5'
+      },
+
+      fontFamily: {
+        poppins: ['var(--font-poppins)', 'sans-serif']
       }
     }
   },
