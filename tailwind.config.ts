@@ -12,6 +12,12 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+      },
+
+      colors: {
+        'HF-yellow': '#FFD540',
+        'HF-blue': '#3C479D',
+        'HF-orange': '#F15A29'
       }
     }
   },
