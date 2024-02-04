@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils'
+
 export const DownChevron = () => {
   return (
     <>
@@ -27,7 +29,7 @@ export const DownChevron = () => {
   )
 }
 
-export const Chevron = () => {
+export const Chevron = ({ className }: { className?: string }) => {
   return (
     <>
       <svg
@@ -36,6 +38,7 @@ export const Chevron = () => {
         viewBox='0 0 13 8'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
+        className={cn(className)}
       >
         <path
           d='M11.5 1.77246L6.5 6.77246L1.5 1.77246'

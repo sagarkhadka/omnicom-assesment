@@ -23,11 +23,11 @@
   }
 
   .hf-tab-btn {
-    @apply flex w-fit items-center gap-4 rounded-tr-[32px] bg-HF-gray px-8 py-4 pl-5 text-base font-medium leading-6;
+    @apply flex w-fit items-center gap-4 rounded-tr-[32px] bg-HF-gray px-8 py-4 pl-5 text-base font-medium leading-6 duration-200;
   }
 
   .hf-tab-active {
-    @apply bg-HF-yellow;
+    @apply relative bg-HF-yellow py-4 pb-5 before:absolute before:bottom-0 before:left-0 before:h-full before:w-full before:rounded-tr-[32px] before:border-b-8 before:border-r-8 before:border-HF-blue;
   }
 
   .hf-section-title {
@@ -38,7 +38,7 @@
 
 @layer components {
   .hf-primary-button {
-    @apply relative isolate overflow-clip rounded-full border-2 border-black bg-HF-orange px-7 py-5 text-xl font-semibold text-black duration-200 hover:bg-HF-orange/90;
+    @apply relative isolate overflow-clip rounded-full border-2 border-black bg-HF-orange px-5 py-2 font-semibold text-black duration-200 hover:bg-HF-orange/90 md:px-7 md:py-3 md:text-lg;
   }
 
   .hf-primary-button:hover::before {
@@ -55,7 +55,7 @@
     left: 0;
     top: -20px;
     transform: translateY(100px);
-    transition-duration: 400ms;
+    transition-duration: 700ms;
     z-index: 1;
   }
 

@@ -1,8 +1,4 @@
-import React from 'react'
-
-import Card from '@/components/Card'
-import { cardData } from '@/data/CardData'
-import ProductDetail from '@/components/detail/ProductDetail'
+import DesktopView from '@/components/desktop/DesktopView'
 
 export default function Home() {
   return (
@@ -12,21 +8,7 @@ export default function Home() {
           <h1 className='hf-section-title text-center'>Section title</h1>
           <h4 className='hf-section-subtitle text-center'>Section subtitle</h4>
         </div>
-        <div className='grid grid-cols-4 gap-4'>
-          {cardData.map(({ title, description, icon, active }) => (
-            <React.Fragment key={`${title}-${description}`}>
-              <Card
-                title={title}
-                description={description}
-                icon={icon}
-                active={active}
-              />
-            </React.Fragment>
-          ))}
-        </div>
-        <div className='mt-14'>
-          <ProductDetail />
-        </div>
+        <DesktopView />
       </section>
     </>
   )

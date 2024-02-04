@@ -12,7 +12,7 @@ interface ICard {
 const Card = ({ title, description, icon, active }: ICard) => {
   return (
     <>
-      <div className='flex min-h-[115px] cursor-pointer flex-col justify-between overflow-clip rounded-lg border border-black/20 duration-200 hover:bg-neutral-50'>
+      <div className='flex min-h-[215px] cursor-pointer flex-col justify-between overflow-clip rounded-lg border border-black/20 duration-200 hover:bg-neutral-50'>
         <div className='space-y-4 p-4'>
           <div className='flex justify-between gap-14'>
             <h6 className='hf-h6'>{title}</h6>

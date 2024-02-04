@@ -36,10 +36,10 @@ const config: Config = {
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
-          to: { height: '100%' }
+          to: { height: 'var(--radix-accordion-content-height)' }
         },
         'accordion-up': {
-          from: { height: '100%' },
+          from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' }
         }
       },
