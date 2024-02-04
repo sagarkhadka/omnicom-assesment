@@ -10,7 +10,6 @@ import {
 import { IProductDetail } from '../desktop/productDetail'
 
 const ProductDetail: React.FC<IProductDetail> = ({ productDetail }) => {
-  console.log('productDetail\t', productDetail)
   return (
     <>
       <div className='rounded-3xl bg-HF-yellow/60 px-7 py-8 sm:px-10 md:rounded-[45px] md:px-16 md:py-12'>
@@ -35,8 +34,8 @@ const ProductDetail: React.FC<IProductDetail> = ({ productDetail }) => {
                             <Image
                               src={iconUrl}
                               alt=''
-                              height={25}
-                              width={25}
+                              height={35}
+                              width={35}
                             />
                             <p className='hf-paragraph-medium'>{title}</p>
                           </div>
