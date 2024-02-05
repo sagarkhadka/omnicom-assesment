@@ -37,7 +37,9 @@ const ProductDetail: React.FC<IProductDetail> = ({ productDetail }) => {
                               height={35}
                               width={35}
                             />
-                            <p className='hf-paragraph-medium'>{title}</p>
+                            <p className='hf-paragraph-medium text-left'>
+                              {title}
+                            </p>
                           </div>
                         </AccordionTrigger>
                         <AccordionContent>

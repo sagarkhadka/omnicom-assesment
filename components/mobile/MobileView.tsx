@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, Fragment } from 'react'
+import { useState } from 'react'
+import Image from 'next/image'
 
-import Card from '@/components/Card'
 import { cardData } from '@/data/CardData'
 import ProductDetail from '@/components/detail/ProductDetail'
 import {
@@ -11,7 +11,6 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '../ui/accordion'
-import Image from 'next/image'
 
 interface ProductDetail {
   title: string
@@ -30,8 +29,6 @@ const MobileView = () => {
     (product) => product?.title === tabName
   ) as { productDetail: ProductDetail }
 
-  // console.log('selectedCard\t', selectedCard)
-
   return (
     <>
       <div className=''>
@@ -48,7 +45,7 @@ const MobileView = () => {
                 <AccordionTrigger className=' pr-4'>
                   <div className='flex items-center gap-6 px-3'>
                     <Image src={icon} alt='' height={35} width={35} />
-                    <h5 className='hf-h5'>{title}</h5>
+                    <h5 className='hf-h5 !text-left'>{title}</h5>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className='p-0'>

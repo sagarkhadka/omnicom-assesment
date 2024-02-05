@@ -4,8 +4,8 @@
 
 @layer base {
   .hf-h2 {
-    @apply font-poppins font-semibold;
-    font-size: clamp(30px, 3vw, 48px);
+    @apply font-poppins font-semibold leading-snug;
+    font-size: clamp(28px, 3vw, 48px);
   }
 
   .hf-h5,
